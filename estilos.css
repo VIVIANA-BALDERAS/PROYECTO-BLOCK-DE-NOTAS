@@ -32,6 +32,7 @@ textarea{
     box-shadow: 
     inset 0 -3em 3em rgba(0, 0, 0, 0.1),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    width: 52%;
 }
 
 input {
@@ -61,7 +62,7 @@ input {
 
 img{
     width: 9%;
-    height: 90px;
+    height: 70px;
 }
 
 .mas, .op{
@@ -166,5 +167,3 @@ ul{
     display: inline-flex;
 
 }
-
-
