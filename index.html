@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <title>Block de Notas</title>
+</head>
+<body>
+
+<div class="container">
+    <h1>NOTAS</h1>
+   
+    <section class="section uno">
+        <img src="note.png"/>
+        <textarea placeholder="Escribe tu nota aquí..." rows="4" cols="50"></textarea>
+        <form action="#">
+            <select name="opciones" id="lang">
+                <option value="seleccionar">Selecciona una categoría</option>
+                <option value="fin">Finalizado</option>
+                <option value="pend">Pendiente</option>
+                <option value="por">Por hacer</option>
+            </select>
+        </form>
+
+        <form action="#">
+            <select name="opciones" id="lang2"> 
+                <option value="seleccionar">Selecciona un color</option>
+                <option value="#fabfb7">Rosa</option>
+                <option value="#fdf9c4">Amarillo</option>
+                <option value="#ffda9e">Naranja</option>
+            </select>
+        </form>
+        <button class="mas" onclick="agregarNota()">NUEVA NOTA</button>
+    </section>
+
+    <section class="section final">
+        <div class="square">
+            <h2>Finalizado</h2>
+            <div class="estilo2 f2">
+                <!-- Aquí se agregarán las tareas -->
+            </div>
+        </div>
+
+        <div class="square pendiente">
+            <h2>Pendiente</h2>
+            <div class="estilo2">
+                <!-- Aquí se agregarán las tareas -->
+            </div>
+        </div>
+
+        <div class="square porhacer">
+            <h2>Por hacer</h2>
+            <div class="estilo2">
+                <!-- Aquí se agregarán las tareas -->
+            </div>
+        </div>
+    </section>
+</div>
+
+<script type="text/javascript" src="funciones.js"></script>
+<script type="text/javascript">
+    // Eventos del navegador
+    window.addEventListener('load', init);
+</script>
+
+</body>
+</html>
